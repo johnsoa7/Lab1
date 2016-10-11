@@ -34,20 +34,32 @@ public class VideoGame {
         
         
     }
-    
+    /**
+     * Enter a comment for this VideoGame.
+     * @param comment The comment to be entered.
+     */
     public void setComment(String comment)
     {
         this.comment=comment;
     }
-
+/**
+     * @return The comment for this VideoGame.
+     */
     public String getComment()
     {
     return comment;
 }
+    /**
+     * Set the flag indicating whether we own this VideoGame.
+     * @param ownIt true if we own the VideoGame, false otherwise.
+     */
      public void setOwn(boolean ownIt)
     {
         gotIt = ownIt;
     }
+     /**
+     * @return true if we own a copy of this VideoGame.
+     */
       public boolean getOwn()
     {
         return gotIt;
@@ -61,6 +73,10 @@ public String getTitle()
 {
     return title;
 }
+/**
+     * Enter a genre for this VideoGame.
+     * @param genre The genre to be entered.
+     */
 public void setGenre(String genre)       
 {
     this.genre=genre;
