@@ -15,6 +15,7 @@ public class Database
 {
     private ArrayList<CD> cds;
     private ArrayList<DVD> dvds;
+    private ArrayList<VideoGame> vgs;
 
     /**
      * Construct an empty Database.
@@ -23,6 +24,7 @@ public class Database
     {
         cds = new ArrayList<CD>();
         dvds = new ArrayList<DVD>();
+        vgs = new ArrayList<VideoGame>();
     }
 
     /**
@@ -42,11 +44,21 @@ public class Database
     {
         dvds.add(theDVD);
     }
-
+/**
+*Add VideoGame to the database.
+*@param theVideoGame The VideoGame to be added.
+*/
+    
+    public void addVideoGame(VideoGame theVideoGame)
+    {
+        vgs.add(theVideoGame);
+    }
     /**
      * Print a list of all currently stored CDs and DVDs to the
      * text terminal.
      */
+    
+    
     public void list()
     {
         // print list of CDs
@@ -60,5 +72,12 @@ public class Database
             dvd.print();
             System.out.println();   // empty line between items
         }
+        public void list()
+        {
+            //prints list of VideoGames
+            for(VideoGame vg : vgs) {
+                vg.print();
+                System.out.println(); // empty line between lines
+            }
+         }
     }
-}
