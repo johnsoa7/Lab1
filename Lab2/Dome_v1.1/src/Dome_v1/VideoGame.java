@@ -81,5 +81,21 @@ public void setGenre(String genre)
 {
     this.genre=genre;
 }
+ /**Prints details about this VideoGame to the text terminal.
+ */
+ public void print()
+ {
+        System.out.print("VideoGame: " + title + " (" + playingTime + " mins)");
+        if(gotIt) {
+            System.out.println("*");
+        }
+	else {
+            System.out.println();
+        }
+        System.out.println("    " + platform);
+        System.out.println("    Genre: " + genre);
+        System.out.println("    number of players: " + numberOfPlayers);
+        System.out.println("    " + comment);
+    }
 }
 
