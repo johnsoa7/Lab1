@@ -93,6 +93,7 @@ public class DVD
             System.out.println();
         }
         System.out.println("    " + director);
+        System.out.println("   Genre "+  genre);
         System.out.println("    " + comment);
         
     }
