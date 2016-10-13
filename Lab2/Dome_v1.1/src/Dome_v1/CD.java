@@ -97,6 +97,7 @@ public class CD
             System.out.println();
         }
         System.out.println("    " + artist);
+	System.out.println("   Genre" + genre);
         System.out.println("    tracks: " + numberOfTracks);
         System.out.println("    " + comment);
     }
